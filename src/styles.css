@@ -1,6 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
-/* html{
+/* ===========================
+        GLOBAL MOBILE FIX
+=========================== */
 
-scroll-behavior:smooth;
+*,
+*::before,
+*::after{
+    box-sizing:border-box;
+}
 
-} */
+html,
+body{
+    overflow-x:hidden;
+    width:100%;
+}
+
+img{
+    max-width:100%;
+    height:auto;
+}
+
+section{
+    overflow:hidden;
+}

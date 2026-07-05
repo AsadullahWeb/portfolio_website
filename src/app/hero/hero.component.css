@@ -302,9 +302,18 @@ background:conic-gradient(
 
 #00e5ff
 
+
 );
 
 animation:ringRotate 6s linear infinite;
+
+
+box-shadow:
+0 0 25px #00e5ff,
+0 0 50px #8b5cf6,
+0 0 80px #22c55e;
+
+
 
 }
 
@@ -571,6 +580,13 @@ width:280px;
 
 height:280px;
 
+
+position:relative;
+
+overflow:visible;
+
+
+
 }
 
 .image-box img{
@@ -629,6 +645,278 @@ width:100%;
 .buttons{
 
 flex-direction:column;
+
+}
+
+}
+/* ===================================
+      RESPONSIVE HERO FIX
+===================================*/
+
+*{
+    box-sizing:border-box;
+}
+
+html,body{
+    overflow-x:hidden;
+}
+
+.hero{
+    width:100%;
+    overflow:hidden;
+}
+
+.hero-container{
+    width:100%;
+}
+
+/* ---------- Tablet ---------- */
+
+@media (max-width:992px){
+
+.hero{
+
+padding:80px 25px 60px;
+
+min-height:auto;
+
+}
+
+.hero-container{
+
+flex-direction:column-reverse;
+
+text-align:center;
+
+gap:45px;
+
+}
+
+.hero-content{
+
+width:100%;
+
+}
+
+.hero h1{
+
+font-size:46px;
+
+}
+
+.hero h2{
+
+font-size:28px;
+
+height:auto;
+
+}
+
+.description{
+
+max-width:100%;
+
+margin:auto;
+
+}
+
+.buttons{
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+}
+
+.social{
+
+justify-content:center;
+
+}
+
+.hero-image{
+
+width:100%;
+
+}
+
+.image-box{
+
+width:300px;
+
+height:300px;
+
+}
+
+.image-box img{
+
+width:260px;
+
+height:260px;
+
+}
+
+.ring{
+
+display:block;
+
+}
+
+.circle1{
+
+width:220px;
+
+height:220px;
+
+left:-80px;
+
+top:-60px;
+
+}
+
+.circle2{
+
+width:180px;
+
+height:180px;
+
+right:-60px;
+
+top:120px;
+
+}
+
+.circle3{
+
+width:180px;
+
+height:180px;
+
+bottom:-60px;
+
+left:35%;
+
+}
+
+}
+
+/* ---------- Mobile ---------- */
+
+@media (max-width:576px){
+
+.hero{
+
+padding:90px 18px 50px;
+
+}
+
+.hero h1{
+
+font-size:34px;
+
+}
+
+.hero h2{
+
+font-size:22px;
+
+}
+
+.description{
+
+font-size:15px;
+
+line-height:26px;
+
+}
+
+.buttons{
+
+flex-direction:column;
+
+width:100%;
+
+}
+
+.btn-primary,
+
+.btn-outline{
+
+width:100%;
+
+padding:15px;
+
+}
+
+.hero-image{
+
+margin-top:10px;
+
+}
+
+.image-box{
+
+width:240px;
+
+height:240px;
+
+}
+
+.image-box img{
+
+width:205px;
+
+height:205px;
+
+}
+
+.ring{
+
+display:block;
+
+}
+
+.social{
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+gap:14px;
+
+}
+
+.social a{
+
+width:48px;
+
+height:48px;
+
+font-size:18px;
+
+}
+
+.circle1{
+
+width:150px;
+
+height:150px;
+
+}
+
+.circle2{
+
+width:130px;
+
+height:130px;
+
+}
+
+.circle3{
+
+width:120px;
+
+height:120px;
 
 }
 
