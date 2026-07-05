@@ -1,0 +1,33 @@
+<section id="projects" class="projects">
+
+<h1>My Projects</h1>
+
+<div class="grid">
+
+<div class="card" *ngFor="let project of projects">
+
+<img [src]="project.image">
+
+<div class="content">
+
+<h2>{{project.title}}</h2>
+
+<p>{{project.desc}}</p>
+
+<span>{{project.tech}}</span>
+
+<div class="buttons">
+
+<button>Live Demo</button>
+
+<button>GitHub</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>

@@ -1,0 +1,165 @@
+<section class="contact" id="contact">
+    <!-- Toast Notification -->
+
+<div
+  class="toast"
+  *ngIf="toastMessage"
+  [ngClass]="toastType">
+
+  <i
+    class="fa-solid"
+    [ngClass]="{
+      'fa-circle-check': toastType === 'success',
+      'fa-circle-xmark': toastType === 'error'
+    }">
+  </i>
+
+  <span>{{ toastMessage }}</span>
+
+</div>
+
+  <div class="section-title" data-aos="fade-up">
+
+    <span>CONTACT ME</span>
+
+    <h2>Let's Work Together</h2>
+
+    <p>
+      Have a project in mind? Feel free to contact me.
+      I'm always open to discussing new ideas and opportunities.
+    </p>
+
+  </div>
+
+  <div class="contact-container">
+
+    <!-- LEFT SIDE -->
+
+    <div class="contact-info" data-aos="fade-right">
+
+      <div class="info-card">
+
+        <i class="fa-solid fa-location-dot"></i>
+
+        <div>
+
+          <h3>Location</h3>
+
+          <p>Mian Channu, Pakistan</p>
+
+        </div>
+
+      </div>
+
+      <div class="info-card">
+
+        <i class="fa-solid fa-envelope"></i>
+
+        <div>
+
+          <h3>Email</h3>
+
+          <p>asadullaharain129@gmail.com</p>
+
+        </div>
+
+      </div>
+
+      <div class="info-card">
+
+        <i class="fa-solid fa-phone"></i>
+
+        <div>
+
+          <h3>Phone</h3>
+
+          <p>+92 318 5080754</p>
+
+        </div>
+
+      </div>
+
+      <div class="status-card">
+
+        <div class="dot"></div>
+
+        <div>
+
+          <h3>Available for Freelance</h3>
+
+          <p>Usually replies within 24 hours.</p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- RIGHT SIDE -->
+
+    <div class="contact-form" data-aos="fade-left">
+
+      <form #contactForm="ngForm" (ngSubmit)="sendEmail()">
+
+        <div class="input-group">
+
+          <input
+            type="text"
+            name="name"
+            [(ngModel)]="form.name"
+            placeholder="Your Name"
+            required>
+
+        </div>
+
+        <div class="input-group">
+
+          <input
+            type="email"
+            name="email"
+            [(ngModel)]="form.email"
+            placeholder="Your Email"
+            required>
+
+        </div>
+
+        <div class="input-group">
+
+          <input
+            type="text"
+            name="title"
+            [(ngModel)]="form.title"
+            placeholder="Subject"
+            required>
+
+        </div>
+
+        <div class="input-group">
+
+          <textarea
+            rows="6"
+            name="message"
+            [(ngModel)]="form.message"
+            placeholder="Your Message"
+            required></textarea>
+
+        </div>
+
+        <button type="submit" [disabled]="loading">
+
+          <i class="fa-solid fa-paper-plane"></i>
+
+          {{ loading ? 'Sending...' : 'Send Message' }}
+
+        </button>
+
+      </form>
+
+    </div>
+
+  </div>
+
+</section>
+<!-- service_e4n2myb -->
+ <!-- template_skn2vxf -->
+  <!-- g_qsKy0QxBHcjyWAK -->

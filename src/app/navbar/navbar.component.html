@@ -1,0 +1,90 @@
+<div class="progress-bar">
+
+    <div class="progress" [style.width.%]="scrollProgress"></div>
+
+</div>
+<nav [class.sticky]="isSticky">
+
+    <div class="container">
+
+        <div class="logo">
+
+            <span>ARAIN</span>
+
+            <small>Developer</small>
+
+        </div>
+
+        <ul [class.active]="isMenuOpen">
+
+            <li>
+
+                <a href="#hero" [class.active]="activeSection==='hero'" (click)="closeMenu()">
+
+                    Home
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="#about" [class.active]="activeSection==='about'" (click)="closeMenu()">
+
+                    About
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="#skills" [class.active]="activeSection==='skills'" (click)="closeMenu()">
+
+                    Skills
+
+                </a>
+
+            </li>
+
+            <li>
+
+    <a href="#services" [class.active]="activeSection==='services'" (click)="closeMenu()">
+
+        Services
+
+    </a>
+
+</li>
+
+            <li>
+
+                <a href="#projects" [class.active]="activeSection==='projects'" (click)="closeMenu()">
+
+                    Projects
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="#contact" [class.active]="activeSection==='contact'" (click)="closeMenu()">
+
+                    Contact
+
+                </a>
+
+            </li>
+
+        </ul>
+
+        <div class="menu" (click)="toggleMenu()">
+
+            ☰
+
+        </div>
+
+    </div>
+
+</nav>
